@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(28, 165, 165);
+    display: flex; /**/
+    justify-content: center; /*justifica horizontalmente*/
+    align-items: center; /*justifica verticalmente*/
+}
+
+.calculadora{
+    background-color: rgb(195, 247, 247);
+    color: rgb(22, 108, 114); /*fuente color*/
+    display: grid; /*coloca todo en columnas*/
+    grid-template-columns: repeat(4, 1fr); /*numero de columnas de la calculadora*/
+    width: 350px; /*ancho*/
+    padding: 1rem; /*relleno*/
+    border-radius: 1rem; /*bordes redondos*/
+    gap: 0.5rem;  /*separacion de objetos internos*/
+}
+
+.pantalla{
+    grid-column: 1/5; /**/
+    background-color: aliceblue;
+    padding: 1rem; /**/
+    font-size: 3rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    font-weight: 600; /*grosorde fuente*/
+    margin-bottom: 0.5rem; 
+}
+
+.boton{
+   background-color: rgb(39, 189, 189);
+   color: rgb(240, 248, 255);
+   border: 0;
+   padding: 1rem;
+   font-size: 15;
+   font-weight: 500;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: .8rem;
+   cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(86, 151, 151);
+}
+
+#cero{
+    grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: rgb(96, 148, 148) ;
+}
